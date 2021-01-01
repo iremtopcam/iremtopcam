@@ -3,14 +3,28 @@
 <!--
 **iremtopcam/iremtopcam** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
-Here are some ideas to get you started:
+#include <stdio.h>
+#include <stdlib.h>
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+int main()
+{
+
+  //c dilinde sayileri tersten yazdirmak
+
+  int sayi,bir,iki,uc,dort,bes;
+  printf("bes basamakli sayi giriniz");
+  scanf("%d",&sayi);
+  printf("\n");
+
+  bir=sayi/10000;
+  iki= (sayi/1000)%10;
+  uc=(sayi/100)%10;
+  dort= (sayi/10)%10;
+  bes=sayi%10;
+
+  printf("%d%d%d%d%d",bes,dort,uc,iki,bir);
+
+
+
+    return 0;
+}
